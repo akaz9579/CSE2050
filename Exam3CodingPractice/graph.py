@@ -45,8 +45,6 @@ class Graph:
         """Returns iterator of neighbors of v"""
         return iter(self.nbrs[v])
 
-    
-        
 
     def __iter__(self):
         """Iterates over all vertices in graph"""

@@ -1,4 +1,3 @@
-
 class Entry:
     def __init__(self, key, value):
         self.key = key
@@ -33,9 +32,6 @@ class HashMap:
         if alpha > self.max_alpha:
             self.rehash(self.n_buckets *2)
 
-        
-
-        
 
     def __getitem__(self, key, value):
         """Returns value associated with key. Raises keyerror if key not in mapping."""
@@ -45,9 +41,6 @@ class HashMap:
                 return entry.value
         raise KeyError(f"{key} not found in mapping")
     
-
-
-
 
     def remove(self, key):
         """Removes key associated with value. Raises keyerror if key not in mapping."""
@@ -66,7 +59,6 @@ class HashMap:
                     return
         raise KeyError(f"{key} not found in mapping")
 
-                
 
     def rehash(self, n_new):
         """Rehashes to have n_new buckets"""
